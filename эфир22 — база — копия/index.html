@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная карта Верхнего мира Эфира</title>
+<style>
+    body {
+        background-color: #1a1a1a; /* Тёмный фон страницы */
+        color: white; /* Белый текст */
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .map-container {
+        position: relative;
+        display: inline-block;
+        width: 90vw; /* 90% ширины окна */
+        height: auto;
+    }
+
+    .map-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .map-button {
+        position: absolute;
+        background: transparent; /* Полностью прозрачный фон */
+        border: none;
+        width: 150px; /* Увеличенный размер кликабельной области */
+        height: 80px;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+    }
+</style>
+</head>
+<body>
+    <h1>Интерактивная карта Верхнего мира Эфира</h1>
+    <div class="map-container">
+        <img src="Эфир _Верхний Мир__20241108195547 (1).jpg" alt="Карта Верхнего мира Эфира">
+        
+        <!-- Кнопки (подкорректируй координаты, если надо) -->
+        <button class="map-button" style="top: 60%; left: 47%;" onclick="location.href='eon.html'"></button>
+        <button class="map-button" style="top: 85%; left: 22%;" onclick="location.href='hakar.html'"></button>
+        <button class="map-button" style="top: 75%; left: 70%;" onclick="location.href='lafim.html'"></button>
+    </div>
+    <h1>Чтобы воспользоваться картой, нажмите на название интересующего материка (Эон, Хакар, Лафим)</h1>
+</body>
+</html>

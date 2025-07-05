@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эон</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Добавляем фоновое изображение */
+            background-size: cover;
+            background-attachment: fixed;
+            color: white; /* Цвет текста */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%; /* Делаем текст не слишком растянутым */
+            margin: 20px auto; /* Центрируем блок */
+            background: rgba(0, 0, 0, 0.7); /* Затемнённый фон для читаемости */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+        }
+        .description img {
+            width: 100%; /* Делаем изображение адаптивным */
+            border-radius: 10px;
+        }
+        .description p {
+            text-align: justify; /* Выравниваем текст */
+            margin-top: 10px;
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    border-radius: 5px;
+}
+ul li img {
+    width: 50px; /* Размер мини-картинки */
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+        }
+        ul {
+            list-style: none; /* Убираем маркеры списка */
+            padding: 0;
+        }
+        ul li {
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        a {
+            color: #FFD700; /* Цвет ссылок */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    border-radius: 5px;
+    max-width: 400px; /* Ограничение ширины списка */
+}
+
+ul li img {
+    width: 60px; /* Уменьшенный размер картинок */
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover; /* Обрезка, чтобы избежать растяжения */
+}
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.regions-grid li {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.regions-grid li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Эон</h1>
+        <div class="description">
+            <img src="eon.jpg" alt="Эон">
+            <p>Центральный Материк Эон: находится в центре карты. Является самым крупным и самым разнообразным местом в Эфире, здесь можно найти все, от морозных краев до болот. На нем вы можете лицезреть три официальных, ныне процветающих, столицы- людей, лесных эльфов, дворфов и одну, обычно не отмеченную на других картах, северную столицу вампиров.
+  История материка полна значимых событий ещё со времен живых богов. Они пришли на Эон с нижнего материка и уже от него держали свой путь врознь. На суше и воде отмечены, помимо столиц: все лорно значимые места, реки, горы, озера, равнины, леса, болота, пустыни, крупные города и пр. Точки интереса.</p>
+
+            <p>Прописанные регионы:
+Средиземный край</p>
+        </div>
+
+        <h2>Регионы</h2>
+<div class="region">
+        <h3>Край невозврата</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="black_sea.jpg" alt="Черное море">
+        <a href="#">Черное море; Край мира</a>
+    </li>
+    <li>
+        <img src="glass.jpg" alt="Стеклянная щетина">
+        <a href="#">Стеклянная щетина</a>
+    </li>
+    <li>
+        <img src="glass_islands.jpg" alt="Стеклянные острова">
+        <a href="#">Стеклянные острова</a>
+    </li>
+    <li>
+        <img src="waling_plateu.jpg" alt="Воющее плато">
+        <a href="#">Воющее плато</a>
+    </li>
+    <li>
+        <img src="dead_sea.jpg" alt="Мертвое море">
+        <a href="#">Мертвое море</a>
+    </li>
+    <li>
+        <img src="nameless_islands.jpg" alt="Безымянные острова">
+        <a href="#">Безымянные острова</a>
+    </li>
+    <li>
+        <img src="neverlove.jpg" alt="Край невозврата">
+        <a href="#">Край невозврата</a>
+    </li>
+    <li>
+        <img src="no_island.jpg" alt="Остров Несуществующий">
+        <a href="#">Остров Несуществующий</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Ледяной край</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="ice_islands.jpg" alt="Острова Ледяные хвосты">
+        <a href="#">Острова Ледяные хвосты</a>
+    </li>
+    <li>
+        <img src="ice_wilds.jpg" alt="Ледяные пустоши">
+        <a href="#">Ледяные пустоши</a>
+    </li>
+    <li>
+        <img src="great_titan.jpg" alt="Великий Титанов Хребет">
+        <a href="#">Великий Титанов Хребет</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Средиземный край</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="great_lift.jpg" alt="Великий лифт Эон">
+        <a href="great_lift.html">Великий лифт Эон</a>
+    </li>
+    <li>
+        <img src="titan_forest.jpg" alt="Титанов лес верхний">
+        <a href="titan_forest.html">Титанов лес верхний</a>
+    </li>
+    <li>
+        <img src="mara_river.jpg" alt="Река Мара">
+        <a href="mara_river.html">Река Мара</a>
+    </li>
+    <li>
+        <img src="thorm.jpg" alt="Столица Торм. Верхний внешний город">
+        <a href="thorm.html">Столица Торм. Верхний внешний город</a>
+    </li>
+    <li>
+        <img src="titan_forestlow.jpg" alt="Титанов лес нижний">
+        <a href="titan_forestlow.html">Титанов лес нижний</a>
+    </li>
+    <li>
+        <img src="irimor.jpg" alt="Иримор">
+        <a href="irimor.html">Иримор</a>
+    </li>
+    <li>
+        <img src="lion_teeth.jpg" alt="Львиный клык правый">
+        <a href="lion_teeth.html">Львиный клык правый</a>
+    </li>
+    <li>
+        <img src="lion_teethl.jpg" alt="Львиный клык левый">
+        <a href="lion_teethl.html">Львиный клык левый</a>
+    </li>
+    <li>
+        <img src="irta_river.jpg" alt="Река Ирта">
+        <a href="#">Река Ирта</a>
+    </li>
+    <li>
+        <img src="centa_river.jpg" alt="Река Цента. Центр">
+        <a href="centa_river.html">Река Цента. Центр</a>
+    </li> 
+    <li>
+        <img src="centa_river_caves.jpg" alt="Извилистые пещеры Центы">
+        <a href="centa_river_caves.html">Извилистые пещеры Центы</a>
+    </li> 
+    <li>
+        <img src="white.jpg" alt="Березовая роща Белая">
+        <a href="white.html">Березовая роща Белая</a>
+    </li>
+    <li>
+        <img src="idriy_forest.jpg" alt="Идрийский лес">
+        <a href="idriy_forest.html">Идрийский лес</a>
+    </li>
+    <li>
+        <img src="viksel.jpg" alt="Виксель">
+        <a href="viksel.html">Виксель</a>
+    </li>
+    <li>
+        <img src="idriy_lands.jpg" alt="Идрийские равнины, нижние">
+        <a href="idriy_lands.html">Идрийские равнины, нижние</a>
+    </li>
+    <li>
+        <img src="idriy_landsup.jpg" alt="Идрийские равнины, верхние">
+        <a href="idriy_landsup.html">Идрийские равнины, верхние</a>
+    </li>
+    <li>
+        <img src="idriy.jpg" alt="Столица Идрий. Окраины">
+        <a href="idriy.html">Столица Идрий. Окраины</a>
+    </li>
+    <li>
+        <img src="idriy_port.jpg" alt="Столица Идрий. Портовый район">
+        <a href="idriy_port.html">Столица Идрий. Портовый район</a>
+    </li>
+    <li>
+        <img src="idriy_city.jpg" alt="Столица Идрий. Внешний город">
+        <a href="idriy_city.html">Столица Идрий. Внешний город</a>
+    </li>
+    <li>
+        <img src="idriy_smallcity.jpg" alt="Столица Идрий. Внутренний город">
+        <a href="idriy_smallcity.html">Столица Идрий. Внутренний город</a>
+    </li>
+    <li>
+        <img src="idriy_castle.jpg" alt="Столица Идрий. Замок">
+        <a href="idriy_castle.html">Столица Идрий. Замок</a>
+    </li>
+    <li>
+        <img src="tara_river.jpg" alt="Река Тара. Запад">
+        <a href="#">Река Тара. Запад</a>
+    </li>
+    <li>
+        <img src="silent_lake.jpg" alt="Озеро Тихое. Север">
+        <a href="silent_lake.html">Озеро Тихое. Север</a>
+    </li>
+    <li>
+        <img src="silent_lake_ist.jpg" alt="Озеро Тихое. Восток">
+        <a href="#">Озеро Тихое. Восток</a>
+    </li>
+    <li>
+        <img src="ravninnoe.jpg" alt="Село Равнинное">
+        <a href="ravninnoe.html">Село Равнинное</a>
+    </li>
+    <li>
+        <img src="okolnoe.jpg" alt="Деревня Окольное">
+        <a href="okolnoe.html">Деревня Окольное</a>
+    </li>
+    <li>
+        <img src="belaya.jpg" alt="Заброшенная деревня Белая">
+        <a href="belaya.html">Заброшенная деревня Белая</a>
+    </li>
+        </ul>
+    </div><div class="region">
+        <h3>Сумеречный край</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="centa_river.jpg" alt="Река Цента. Север">
+        <a href="#">Река Цента. Север</a>
+    </li> 
+    <li>
+        <img src="black_forest.jpg" alt="Чернолесье">
+        <a href="#">Чернолесье</a>
+    </li>
+    <li>
+        <img src="shattering_plateu.jpg" alt="Плато Раскола">
+        <a href="#">Плато Раскола</a>
+    </li>
+    <li>
+        <img src="dark_lake.jpg" alt="Озеро Мрачное">
+        <a href="#">Озеро Мрачное</a>
+    </li>
+    <li>
+        <img src="viasis.jpg" alt="Виасис">
+        <a href="#">Виасис</a>
+    </li>
+    <li>
+        <img src="shattering_mountian.jpg" alt="Хребет Раскола">
+        <a href="#">Хребет Раскола</a>
+    </li>
+    <li>
+        <img src="no_water.jpg" alt="Залив Пустой">
+        <a href="#">Залив Пустой</a>
+    </li>
+    <li>
+        <img src="nothing_islands.jpg" alt="Острова Пустые">
+        <a href="#">Острова Пустые</a>
+    </li>
+    <li>
+        <img src="chtonic_bibiks.jpg" alt="Хтонические Столпы">
+        <a href="#">Хтонические Столпы</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Край грёз</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="mystery_forest.jpg" alt="Лес Грез">
+        <a href="#">Лес Грез</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Край фей</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="lisem.jpg" alt="Лисэм">
+        <a href="#">Лисэм</a>
+    </li>
+    <li>
+        <img src="tara_river.jpg" alt="Река Тара. Центр">
+        <a href="#">Река Тара. Центр</a>
+    </li>
+    <li>
+        <img src="fiora_forest.jpg" alt="Лес Фиора">
+        <a href="#">Лес Фиора</a>
+    </li>
+    <li>
+        <img src="torzhok.jpg" alt="Торжок">
+        <a href="#">Торжок</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Край буреломов</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="silent_pusha.jpg" alt="Тихая Пуща">
+        <a href="#">Тихая Пуща</a>
+    </li>
+    <li>
+        <img src="cimestry_dragons.jpg" alt="Кладбище Драконов">
+        <a href="#">Кладбище Драконов</a>
+    </li>
+    <li>
+        <img src="liho_swamps.jpg" alt="Лихие Топи">
+        <a href="#">Лихие Топи</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Слепой край</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="blind_loshina.jpg" alt="Слепая лощина">
+        <a href="#">Слепая лощина</a>
+    </li>
+    <li>
+        <img src="cimestry_ships.jpg" alt="Кладбище кораблей">
+        <a href="#">Кладбище кораблей</a>
+    </li>
+    <li>
+        <img src="blind_islands.jpg" alt="Слепые острова">
+        <a href="#">Слепые острова</a>
+    </li>
+        </ul>
+    </div>
+<nav class="breadcrumb">
+    <a href="index.html">Карта мира</a> &rarr; 
+    <a href="eon.html">Эон</a>
+</body>
+</html>
