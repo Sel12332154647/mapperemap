@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хакар</title>
+    <title>Эон</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -92,6 +92,29 @@ ul li img {
     border-radius: 5px;
     object-fit: cover; /* Обрезка, чтобы избежать растяжения */
 }
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.regions-grid li {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.regions-grid li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
     </style>
 </head>
 <body>
@@ -104,131 +127,176 @@ ul li img {
         </div>
 
         <h2>Регионы</h2>
+<div class="region">
         <h3>Земли скорпиона</h3>
-        <ul>
+<ul class="regions-grid">
     <li>
         <img src="silent_mountians.jpg" alt="Немые горы">
-        <a href="#">Немые горы</a>
+        <a href="silent_mountians.html">Немые горы</a>
     </li>
     <li>
         <img src="altameria.jpg" alt="Тюрьма Альтамерия">
-        <a href="#">Тюрьма Альтамерия</a>
+        <a href="altameria.html">Тюрьма Альтамерия</a>
     </li>
     <li>
         <img src="silent_island.jpg" alt="Немой остров">
-        <a href="#">Немой остров</a>
+        <a href="silent_island.html">Немой остров</a>
     </li>
     <li>
         <img src="ice_proliv.jpg" alt="Ледяной пролив">
-        <a href="#">Ледяной пролив</a>
-    </li>
-
-        <h3>Святые земли</h3>
-    <li>
-        <img src="light_islands.jpg" alt="Острова света">
-        <a href="#">Острова света</a>
-    </li>
-    <li>
-        <img src="light_zaliv.jpg" alt="Светлый залив">
-        <a href="#">Светлый залив</a>
-    </li>
-    <li>
-        <img src="saint_walllow.jpg" alt="Нижняя Святая стена">
-        <a href="#">Нижняя Святая стена</a>
-    </li>
-    <li>
-        <img src="saint_wallhigh.jpg" alt="Верхняя Святая стена">
-        <a href="#">Верхняя Святая стена</a>
-    </li>
-    <li>
-        <img src="araphim.jpg" alt="Арафим">
-        <a href="#">Арафим</a>
-    </li>
-
-        <h3>Хищные земли</h3>
-    <li>
-        <img src="diamond_proliv.jpg" alt="Алмазный пролив">
-        <a href="#">Алмазный пролив</a>
-    </li> 
-    <li>
-        <img src="valaris.jpg" alt="Валарис">
-        <a href="#">Валарис</a>
-    </li>
-    <li>
-        <img src="wind_mountian.jpg" alt="Ветреный пик">
-        <a href="#">Ветреный пик</a>
-    </li>
-    <li>
-        <img src="briges_broken.jpg" alt="Мосты разбитых желаний">
-        <a href="#">Мосты разбитых желаний</a>
-    </li>
-    <li>
-        <img src="raf_river.jpg" alt="Река Раф">
-        <a href="#">Река Раф</a>
-    </li>
-    <li>
-        <img src="dead_teeth.jpg" alt="Зубы мертвых">
-        <a href="#">Зубы мертвых</a>
-    </li>
-    <li>
-        <img src="hares.jpg" alt="Расщелина Харэс">
-        <a href="#">Расщелина Харэс</a>
-    </li>
-        <h3>Мёртвые земли</h3>
-    <li>
-        <img src="dead_storms.jpg" alt="Мертвые буреломы">
-        <a href="#">Мертвые буреломы</a>
-    </li>
-    <li>
-        <img src="nowings_birds.jpg" alt="Обрыв бескрылых птиц">
-        <a href="#">Обрыв бескрылых птиц</a>
-    </li>
-        <h3>Тихие земли</h3>
-    <li>
-        <img src="prifir.jpg" alt="Прифир">
-        <a href="#">Прифир</a>
-    </li>
-    <li>
-        <img src="wind_zaliv.jpg" alt="Залив ветров">
-        <a href="#">Залив ветров</a>
-    </li>
-    <li>
-        <img src="wind_islands.jpg" alt="Острова ветров">
-        <a href="#">Острова ветров</a>
-    </li>
-        <h3>Золотые земли</h3>
-    <li>
-        <img src="harafar.jpg" alt="Харафар">
-        <a href="#">Харафар</a>
-    </li>
-        <h3>Земли слёз</h3>
-    <li>
-        <img src="alone_island.jpg" alt="Остров Одинокий">
-        <a href="#">Остров Одинокий</a>
-    </li>
-    <li>
-        <img src="desert_tears.jpg" alt="Пустыня Слёз">
-        <a href="#">Пустыня Слёз</a>
-    </li>
-    <li>
-        <img src="suffering_ruins.jpg" alt="Руины страдающего града">
-        <a href="#">Руины страдающего града</a>
-    </li>
-    <li>
-        <img src="tears_ruins.jpg" alt="Руины слёз">
-        <a href="#">Руины слёз</a>
-    </li>
-    <li>
-        <img src="broken_islands.jpg" alt="Отколотые острова">
-        <a href="#">Отколотые острова</a>
-    </li>
-        <h3>Пустые земли</h3>
-    <li>
-        <img src="sand_islands.jpg" alt="Острова Песков">
-        <a href="#">Острова Песков</a>
+        <a href="ice_proliv.html">Ледяной пролив</a>
     </li>
         </ul>
     </div>
-
+<div class="region">
+        <h3>Святые земли</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="light_islands.jpg" alt="Острова света">
+        <a href="light_islands.html">Острова света</a>
+    </li>
+    <li>
+        <img src="light_zaliv.jpg" alt="Светлый залив">
+        <a href="light_zaliv.html">Светлый залив</a>
+    </li>
+    <li>
+        <img src="saint_walllow.jpg" alt="Нижняя Святая стена">
+        <a href="saint_walllow.html">Нижняя Святая стена</a>
+    </li>
+    <li>
+        <img src="saint_wallhigh.jpg" alt="Верхняя Святая стена">
+        <a href="saint_wallhigh.html">Верхняя Святая стена</a>
+    </li>
+    <li>
+        <img src="araphim.jpg" alt="Арафим">
+        <a href="araphim.html">Арафим</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Хищные земли</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="diamond_proliv.jpg" alt="Алмазный пролив">
+        <a href="diamond_proliv.html">Алмазный пролив</a>
+    </li> 
+    <li>
+        <img src="valaris.jpg" alt="Валарис">
+        <a href="valaris.html">Валарис</a>
+    </li>
+    <li>
+        <img src="wind_mountian.jpg" alt="Ветреный пик">
+        <a href="wind_mountian.html">Ветреный пик</a>
+    </li>
+    <li>
+        <img src="briges_broken.jpg" alt="Мосты разбитых желаний">
+        <a href="briges_broken.html">Мосты разбитых желаний</a>
+    </li>
+    <li>
+        <img src="raf_river.jpg" alt="Река Раф">
+        <a href="raf_river.html">Река Раф</a>
+    </li>
+    <li>
+        <img src="dead_teeth.jpg" alt="Зубы мертвых">
+        <a href="dead_teeth.html">Зубы мертвых</a>
+    </li>
+    <li>
+        <img src="hares.jpg" alt="Расщелина Харэс">
+        <a href="hares.html">Расщелина Харэс</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Мёртвые земли</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="dead_storms.jpg" alt="Мертвые буреломы">
+        <a href="dead_storms.html">Мертвые буреломы</a>
+    </li>
+    <li>
+        <img src="nowings_birds.jpg" alt="Обрыв бескрылых птиц">
+        <a href="nowings_birds.html">Обрыв бескрылых птиц</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Тихие земли</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="prifir.jpg" alt="Прифир">
+        <a href="prifir.html">Прифир</a>
+    </li>
+    <li>
+        <img src="wind_zaliv.jpg" alt="Залив ветров">
+        <a href="wind_zaliv.html">Залив ветров</a>
+    </li>
+    <li>
+        <img src="wind_islands.jpg" alt="Острова ветров">
+        <a href="wind_islands.html">Острова ветров</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Золотые земли</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="harafar.jpg" alt="Харафар. Трущобы">
+        <a href="harafar.html">Харафар. Трущобы</a>
+    </li>
+    <li>
+        <img src="harafar_market.jpg" alt="Харафар. Великая торговая площадь">
+        <a href="harafar_market.html">Харафар. Великая торговая площадь</a>
+    </li>
+    <li>
+        <img src="harafar_port.jpg" alt="Харафар. Порт">
+        <a href="harafar_port.html">Харафар. Порт</a>
+    </li>
+    <li>
+        <img src="harafar_city.jpg" alt="Харафар. Внешний город">
+        <a href="harafar_city.html">Харафар. Внешний город</a>
+    </li>
+    <li>
+        <img src="harafar_smallcity.jpg" alt="Харафар. Внутренний город">
+        <a href="harafar_smallcity.html">Харафар. Внутренний город</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Земли слёз</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="alone_island.jpg" alt="Остров Одинокий">
+        <a href="alone_island.html">Остров Одинокий</a>
+    </li>
+    <li>
+        <img src="desert_tears.jpg" alt="Пустыня Слёз">
+        <a href="desert_tears.">Пустыня Слёз</a>
+    </li>
+    <li>
+        <img src="suffering_ruins.jpg" alt="Руины страдающего града">
+        <a href="suffering_ruins.html">Руины страдающего града</a>
+    </li>
+    <li>
+        <img src="tears_ruins.jpg" alt="Руины слёз">
+        <a href="tears_ruins.html">Руины слёз</a>
+    </li>
+    <li>
+        <img src="broken_islands.jpg" alt="Отколотые острова">
+        <a href="broken_islands.html">Отколотые острова</a>
+    </li>
+        </ul>
+    </div>
+<div class="region">
+        <h3>Пустые земли</h3>
+<ul class="regions-grid">
+    <li>
+        <img src="sand_islands.jpg" alt="Острова Песков">
+        <a href="sand_islands.html">Острова Песков</a>
+    </li>
+        </ul>
+    </div>
+<nav class="breadcrumb">
+    <a href="index.html">Карта мира</a> &rarr; 
+    <a href="eon.html">Хакар</a>
 </body>
 </html>
